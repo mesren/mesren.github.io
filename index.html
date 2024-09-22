@@ -18,6 +18,7 @@
             align-items: center;
             height: 100vh;
             text-align: center;
+            position: relative;
         }
 
         .container {
@@ -34,7 +35,6 @@
         p {
             font-size: 1.25rem;
             margin-bottom: 30px;
-            padding: -10px;
         }
 
         .buttons {
@@ -62,19 +62,49 @@
             font-size: 2rem;
             margin-right: 10px;
         }
+        
+        .l-u {
+            font-style: italic;
+            opacity: 0.75;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            text-align: right;
+        }
     </style>
+    <script>
+        window.onload = function() {
+            var strings = [
+                "Gamemaker? Heh... Haven't heard that name in years.",
+                "Electron? Really?",
+                "Ever heard of Among Us, Gregory?",
+                "Bazinga.",
+                "Did they fix Utilla yet?",
+                "HIT ME BABY ONE MORE TIME"
+            ];
+
+            var randomString = strings[Math.floor(Math.random() * strings.length)];
+            document.getElementById("random-text").innerText = randomString;
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1><span class="emoji-wave"></span>mesren2</h1>
-        <p>I'm a developer with my main passion(s) being Java, Kotlin, (anything Minecraft related),</p>
-        <p>web dev, Unity / C# / C</p>
+        <p>
+            <i id="random-text"></i>
+        </p>
+        <p>I'm a developer with my main passion(s) being Java, Kotlin,</p>
+        <p>Webdev, Unity / C# / C</p>
         <br>
         <p style="font-size: 26px; font-weight: bold;">Contact me on discord @mesren2</p>
         <div class="buttons">
             <a href="https://github.com/mesren" target="_blank">Github</a>
             <a href="https://mesren.github.io/tutorials/dev-tutorials.html" target="_blank">Dev Tutorials</a>
         </div>
+    </div>
+    <div class="l-u">
+        <i>Last updated 9/22/24</i>
     </div>
 </body>
 </html>
