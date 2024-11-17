@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Warnut</title>
-
+        <title>Warnut Studios</title>
         <style>
+            body
+            {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
             .logo {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 width: 25%;
             }
+
+            .project-container
+            {
+                padding: 24px;
+                border: 6px solid coral;
+                border-radius: 12px;
+                width: 200px;
+                height: 180px;
+
+                margin-bottom: 24px;
+                margin-left: 24px;
+            }
+
+            .project-header
+            {
+                font-size: xx-large;
+                text-align: center;
+                margin-top: 10px;
+                font-weight: 500;
+                padding-bottom: 8px;
+            }
+
+            .project-description
+            {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .header
+            {
+                font-size: xx-large;
+                padding-bottom: 25px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 50px;
+            }
         </style>
     </head>
     <body>
-        <div style="font-size: xx-large; padding-bottom: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; text-align: center; margin-top: 50px;">Warnut</div>
+        <div class="header">Warnut</div>
         <img class="logo" src="./warnutlogo.png"></img>
+
+        <div class="header">Projects</div>
+
+        <div class="project-container">
+            <div>
+                <div class="project-header">Arcane Arts</div>
+                <div class="project-description">Modern Magical Arts mod for Minecraft</div>
+                <p style="text-align: center; font-weight: 900;">COMING SOON</p>
+            </div>
+        </div>
     </body>
 </html>
