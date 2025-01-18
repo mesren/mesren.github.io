@@ -1,112 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mesren2</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 5;
-            font-family: 'Inter', sans-serif;
-            background: url('background.png') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            position: relative;
-        }
-
-        .container {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            gap: 20px;
-            padding: 0;
-        }
-
-        .buttons a {
-            padding: 10px 20px;
-            background-color: #333;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        .buttons a:hover {
-            background-color: #555;
-        }
-
-        .emoji-wave {
-            font-size: 2rem;
-            margin-right: 10px;
-        }
-        
-        .l-u {
-            font-style: italic;
-            opacity: 0.75;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            text-align: right;
-        }
-    </style>
-    <script>
-        window.onload = function() {
-            var strings = [
-                "Gamemaker? Heh... Haven't heard that name in years.",
-                "Electron? Really?",
-                "Ever heard of Among Us, Gregory?",
-                "Bazinga.",
-                "Did they fix Utilla yet?",
-                "HIT ME BABY ONE MORE TIME",
-                "Warrick is the rizzler!"
-            ];
-
-            var randomString = strings[Math.floor(Math.random() * strings.length)];
-            document.getElementById("random-text").innerText = randomString;
-        }
-    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Typing Dots Animation</title>
+<link rel="stylesheet" type="text/css" href="./style.css"  />
 </head>
 <body>
-    <div class="container">
-        <h1><span class="emoji-wave"></span>mesren2</h1>
-        <p>
-            <i id="random-text"></i>
-        </p>
-        <p>I'm a developer with my main passion(s) being Java, Kotlin,</p>
-        <p>Webdev, Unity / C# / C</p>
-        <br>
-        <p style="font-size: 26px; font-weight: bold;">Contact me on discord @mesren2</p>
-        <div class="buttons">
-            <a href="https://github.com/mesren" target="_blank">Github</a>
-            <a href="https://mesren.github.io/tutorials/dev-tutorials.html" target="_blank">Dev Tutorials</a>
-            <a href="warnut/" target="_blank">Warnut</a>
-        </div>
-    </div>
-    <div class="l-u">
-        <i style="color: black;">Last updated 12/2/24</i>
-    </div>
+<div id="construction-text">check back later stalker</div>
+<div class="background">
+  <div class="blue-dot"></div>
+  <div class="blue-dot"></div>
+  <div class="blue-dot"></div>
+  <div class="blue-dot"></div>
+  <div class="blue-dot"></div>
+  <div class="blue-dot"></div>
+</div>
 </body>
 </html>
